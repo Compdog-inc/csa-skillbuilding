@@ -4,6 +4,12 @@ import java.util.Scanner;
 
 public class Favorite {
 
+    /**
+     *  This program asks the user about some of their favorite things
+     *  (food, animal, movie)
+     *  And responds with a sentence relating to them,
+     *  with support for empty responses.
+     */
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
 
@@ -17,10 +23,19 @@ public class Favorite {
         String favoriteMovie = keyboard.nextLine();
 
         System.out.printf(
-                "Same! I also love watching %s while eating %s with my %s!",
-                capitalizeName(favoriteMovie),
-                favoriteFood,
-                favoriteAnimal);
+                "Same! I also love watching %s while eating %s, %s!",
+                withDefault( // Provide alternative to the favorite movie when no answer is given
+                        capitalizeName(favoriteMovie), // Movie names should be capitalized
+                        "my life passing in front of my eyes"
+                ),
+                withDefault( // Provide alternative to the favorite food when no answer is given
+                        favoriteFood,
+                        "my regrets"
+                ),
+                favoriteAnimal.isEmpty() ? // If no favorite animal is provided, use a default instead
+                        "alone" :
+                        ("with my " + favoriteAnimal)
+        );
     }
 
     /**
@@ -49,10 +64,10 @@ public class Favorite {
     }
 
     /**
-     * Returns input string unless it is empty, then retur
-     * @param str
-     * @param defaultStr
-     * @return
+     * Returns input string unless it is empty, then return a default instead
+     * @param str Input string
+     * @param defaultStr Default string
+     * @return The input string or default if empty
      */
     private static String withDefault(String str, String defaultStr) {
         if (str.isEmpty())
