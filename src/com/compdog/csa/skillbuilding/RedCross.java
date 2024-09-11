@@ -19,8 +19,8 @@ public class RedCross extends JPanel
         int xCenter = getWidth() / 2;
         int yCenter = getHeight() / 2;
         g.setColor(Color.RED);
-        g.fillRect(xCenter, yCenter, 10, 50);
-        g.fillRect(xCenter, yCenter, 50, 10);
+        g.fillRect(xCenter-5, yCenter-50, 10, 100);
+        g.fillRect(xCenter-50, yCenter-5, 100, 10);
     }
 
     public static void main(String[] args)
