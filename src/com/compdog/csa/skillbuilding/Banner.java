@@ -22,8 +22,8 @@ public class Banner extends JPanel
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g); // Paint the background
-        g.setColor(Color.RED);
-        g.drawString("Hello, Action!", xPos, yPos);
+        g.setColor(Color.BLACK);
+        g.fillRect(xPos, yPos-25, 50, 50);
     }
 
     // Called automatically when the timer "fires"
