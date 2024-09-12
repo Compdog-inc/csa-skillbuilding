@@ -1,3 +1,5 @@
+// Vlad, 9/11/2024, Write a program that asks about the user's favorite things and responds
+
 package com.compdog.csa.skillbuilding;
 
 import java.util.Scanner;

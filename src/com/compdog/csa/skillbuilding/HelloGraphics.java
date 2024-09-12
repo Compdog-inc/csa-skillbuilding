@@ -1,3 +1,5 @@
+// Vlad, 9/11/2024, Show a white message on a blue background
+
 package com.compdog.csa.skillbuilding;
 
 // This program displays simple graphics
@@ -8,10 +10,8 @@ import java.awt.Container;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class HelloGraphics extends JPanel
-{
-    public void paintComponent(Graphics g)
-    {
+public class HelloGraphics extends JPanel {
+    public void paintComponent(Graphics g) {
         super.paintComponent(g);  // Call JPanel's paintComponent method
         //  to paint the background
         g.setColor(Color.BLUE);
@@ -26,8 +26,7 @@ public class HelloGraphics extends JPanel
         g.drawString("Hello, Graphics!", 55, 65);
     }
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         JFrame window = new JFrame("Graphics Demo");
         // Set this window's location and size:
         // upper-left corner at 300, 300; width 200, height 150

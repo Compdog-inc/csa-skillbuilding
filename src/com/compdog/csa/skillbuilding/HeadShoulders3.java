@@ -1,3 +1,5 @@
+// Vlad, 9/11/2024, Print "Head, shoulders, knees, and toes, ..." 3 times
+
 package com.compdog.csa.skillbuilding;
 
 public class HeadShoulders3 {

@@ -1,3 +1,5 @@
+// Vlad, 9/11/2024, Write a program that emulates a banner ad
+
 package com.compdog.csa.skillbuilding;
 
 import java.awt.*;
