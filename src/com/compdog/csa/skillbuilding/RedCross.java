@@ -10,6 +10,10 @@ import java.awt.Container;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+/**
+ * This program displays a red cross on a white
+ * background.
+ */
 public class RedCross extends JPanel
 {
     public void paintComponent(Graphics g)
